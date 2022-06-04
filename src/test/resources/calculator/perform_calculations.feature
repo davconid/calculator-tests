@@ -29,8 +29,8 @@ Feature: Perform Calculations
       | 2            | *        | 2.5           | 5      |
 
   Scenario Outline: Perform more calculations
-    When Matt calculates <Calculation>
-    Then he should see a result of <Result>
+    When Matt calculates "<Calculation>"
+    Then he should see a result of "<Result>"
     Examples:
       | Calculation | Result |
       | 1 + 2       | 3      |
