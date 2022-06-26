@@ -1,6 +1,7 @@
 package calculator.stepdefinitions;
 
 import calculator.domain.MathsOperation;
+import calculator.domain.ShowHistory;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -40,6 +41,14 @@ public class CalculatorStepDefinitions {
     @When("{actor} calculates {string}")
     public void calculates(Actor actor, String calculation) {
 
+    }
+
+    @DataTableType
+    public ShowHistory calculationHistory(Map<String, String> tableHistory) {
+        return new ShowHistory(
+                tableHistory.get("Expression"),
+                tableHistory.get("Result")
+        );
     }
 
     @Then("the calculation history should contain:")
