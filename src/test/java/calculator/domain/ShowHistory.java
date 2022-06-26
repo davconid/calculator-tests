@@ -16,4 +16,12 @@ public class ShowHistory {
     public String getResult() {
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "ShowHistory{" +
+                "expression='" + expression + '\'' +
+                ", result='" + result + '\'' +
+                '}';
+    }
 }
