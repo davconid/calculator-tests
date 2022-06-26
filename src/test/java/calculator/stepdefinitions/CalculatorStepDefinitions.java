@@ -19,7 +19,7 @@ public class CalculatorStepDefinitions {
 
     }
 
-    @When("{actor} performs/(has performed) the following calculation(s):")
+    @When("{actor} (has )performed/performs the following calculation(s):")
     public void performs_the_following_calculation(Actor actor, List<MathsOperation> operation) {
 
     }
